@@ -5,6 +5,7 @@
   "scripts": {
     "build:popup": "cd popup && npm run build && cd ..",
     "build:content_scripts": "cd content_scripts  && npm run build && cd ..",
-    "build": "npm run build:popup && npm run build:content_scripts"
+    "cp": "cp -f manifest.json build/manifest.json && cp -r -f public build/public",
+    "build": "npm run build:popup && npm run build:content_scripts && npm run cp"
   }
 }

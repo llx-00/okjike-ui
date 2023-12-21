@@ -22,7 +22,7 @@
       "matches": [
         "https://web.okjike.com/*"
       ],
-      "run_at": "document_end",
+      "run_at": "document_idle",
       "js": [
         "content_scripts/index.js"
       ]

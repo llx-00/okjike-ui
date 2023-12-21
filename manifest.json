@@ -15,7 +15,7 @@
       "32": "public/logo32.png",
       "128": "public/logo180.png"
     },
-    "default_popup": "dist/popup/index.html"
+    "default_popup": "build/popup/index.html"
   },
   "content_scripts": [
     {
@@ -24,7 +24,7 @@
       ],
       "run_at": "document_end",
       "js": [
-        "dist/content_scripts/main.js"
+        "build/content_scripts/index.js"
       ]
     }
   ]

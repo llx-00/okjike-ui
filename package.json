@@ -2,27 +2,9 @@
   "name": "okjike-ui",
   "version": "0.1.0",
   "description": "即刻web端UI插件",
-  "packageManager": "pnpm@8.0.0+",
-  "type": "module",
   "scripts": {
-    "build:popup": "vite build src/popup --outDir ../../dist/popup --emptyOutDir --base /dist/popup",
-    "dev:popup": "vite src/popup",
-    "build:content_scripts": "tsc src/content_scripts/main.ts --outDir dist/content_scripts",
-    "build": "npm run build:popup & npm run build:content_scripts"
-  },
-  "devDependencies": {
-    "@types/fs-extra": "^11.0.4",
-    "@types/node": "^20.10.5",
-    "@types/react": "^18.2.45",
-    "@types/react-dom": "^18.2.18",
-    "@vitejs/plugin-react": "^4.2.1",
-    "fs-extra": "^11.2.0",
-    "sass": "^1.69.5",
-    "typescript": "^5.3.3",
-    "vite": "^5.0.10"
-  },
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "build:popup": "cd popup && npm run build && cd ..",
+    "build:content_scripts": "cd content_scripts  && npm run build && cd ..",
+    "build": "npm run build:popup && npm run build:content_scripts"
   }
 }

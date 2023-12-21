@@ -1,0 +1,7 @@
+{
+  "files": ["src/main.ts"],
+  "compilerOptions": {
+    "target": "ES6",
+    "outDir": "../build/content_scripts"
+  }
+}

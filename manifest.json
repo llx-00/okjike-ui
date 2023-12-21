@@ -1,0 +1,31 @@
+{
+  "name": "okjike-ui",
+  "version": "0.1.0",
+  "manifest_version": 3,
+  "description": "即刻web端UI插件",
+  "icons": {
+    "16": "public/logo16.png",
+    "32": "public/logo32.png",
+    "128": "public/logo180.png"
+  },
+  "action": {
+    "default_title": "okjike-ui",
+    "default_icon": {
+      "16": "public/logo16.png",
+      "32": "public/logo32.png",
+      "128": "public/logo180.png"
+    },
+    "default_popup": "dist/popup/index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://web.okjike.com/*"
+      ],
+      "run_at": "document_end",
+      "js": [
+        "dist/content_scripts/main.js"
+      ]
+    }
+  ]
+}

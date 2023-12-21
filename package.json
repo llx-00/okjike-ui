@@ -5,7 +5,7 @@
   "packageManager": "pnpm@8.0.0+",
   "type": "module",
   "scripts": {
-    "build:popup": "vite build src/popup --outDir ../../dist/popup --emptyOutDir --base dist/popup",
+    "build:popup": "vite build src/popup --outDir ../../dist/popup --emptyOutDir --base /dist/popup",
     "dev:popup": "vite src/popup",
     "build:content_scripts": "tsc src/content_scripts/main.ts --outDir dist/content_scripts",
     "build": "npm run build:popup & npm run build:content_scripts"

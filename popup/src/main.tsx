@@ -4,12 +4,6 @@ import ReactDom from "react-dom/client";
 import "./index.scss";
 import { sayHello } from "./tools";
 
-ReactDom.createRoot(document.getElementById("root")!).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
-
 function App() {
   sayHello();
 
@@ -21,3 +15,9 @@ function App() {
     </ul>
   );
 }
+
+ReactDom.createRoot(document.getElementById("root")!).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
